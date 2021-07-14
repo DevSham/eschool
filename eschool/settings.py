@@ -90,8 +90,8 @@ DATABASES = {
 'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'rentals',
-        'USER': 'postgres',
-        'PASSWORD': '12345',
+        'USER': '',
+        'PASSWORD': '',
         'HOST': 'localhost',   # Or an IP Address that your DB is hosted on
         'PORT': '5432',
     }
@@ -154,13 +154,7 @@ REST_FRAMEWORK = {
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
     'PAGE_SIZE': 10,
     'DEFAULT_AUTHENTICATION_CLASSES': [
-        # 'rest_framework.authentication.TokenAuthentication',
-        # 'rest_framework.authentication.BasicAuthentication',
-        # 'rest_framework.authentication.SessionAuthentication',
-        # 'rest_framework_simplejwt.authentication.JWTAuthentication',
         'knox.auth.TokenAuthentication',
 
     ],
 }
-#thisngs to install cors, pip3 install djangorestframework-simplejwt. pip3 install djangorestframework  pip install django-cors-headers
-# this is a super user: python manage.py drf_create_token vitor, pip3 install django-rest-knox
