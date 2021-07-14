@@ -27,7 +27,7 @@ SECRET_KEY = 'xp&une&x*e0-3&sffopmq$*824z0o+q2d%lnqrqrjaf1ojr@_z'
 DEBUG = True
 
 # ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'b9f3614fafd6.ngrok.io']
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['eschoolbackend1.herokuapp.com']
 
 
 # Application definition
