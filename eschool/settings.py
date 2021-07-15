@@ -30,7 +30,7 @@ SECRET_KEY = 'xp&une&x*e0-3&sffopmq$*824z0o+q2d%lnqrqrjaf1ojr@_z'
 DEBUG = True
 
 # ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'b9f3614fafd6.ngrok.io']
-ALLOWED_HOSTS = ['eschoolbackend1.herokuapp.com']
+ALLOWED_HOSTS = ['eschoolbackende.herokuapp.com']
 
 
 # Application definition
@@ -166,15 +166,17 @@ REST_FRAMEWORK = {
     ],
 }
 
-# PROJECT_ROOT   =   os.path.join(os.path.abspath(__file__))
-STATIC_ROOT  =   os.path.join(PROJECT_ROOT, 'static')
-
-# Extra lookup directories for collectstatic to find static files
-# STATICFILES_DIRS = (
-#     os.path.join(PROJECT_ROOT, 'static'),
-# )
+# # PROJECT_ROOT   =   os.path.join(os.path.abspath(__file__))
+# STATIC_ROOT  =   os.path.join(PROJECT_ROOT, 'static')
+#
+# # Extra lookup directories for collectstatic to find static files
+# # STATICFILES_DIRS = (
+# #     os.path.join(PROJECT_ROOT, 'static'),
+# # )
+# STATIC_ROOT = os.path.join(BASE_DIR, ‘staticFiles’)
 
 django_heroku.settings(locals())
+
 
 prod_db  =  dj_database_url.config(conn_max_age=500)
 DATABASES['default'].update(prod_db)
