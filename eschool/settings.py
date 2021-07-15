@@ -30,7 +30,7 @@ SECRET_KEY = 'xp&une&x*e0-3&sffopmq$*824z0o+q2d%lnqrqrjaf1ojr@_z'
 DEBUG = True
 
 # ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'b9f3614fafd6.ngrok.io']
-ALLOWED_HOSTS = ['eschoolbackende.herokuapp.com']
+ALLOWED_HOSTS = ['http://eschoolbackende.herokuapp.com']
 
 
 # Application definition
@@ -94,8 +94,8 @@ DATABASES = {
 'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'rentals',
-        'USER': 'postgres',
-        'PASSWORD': '12345',
+        'USER': '',
+        'PASSWORD': '',
         'HOST': 'localhost',   # Or an IP Address that your DB is hosted on
         'PORT': '5432',
     }
@@ -173,7 +173,7 @@ REST_FRAMEWORK = {
 # # STATICFILES_DIRS = (
 # #     os.path.join(PROJECT_ROOT, 'static'),
 # # )
-# STATIC_ROOT = os.path.join(BASE_DIR, ‘staticFiles’)
+STATIC_ROOT = os.path.join(BASE_DIR, ‘static’)
 
 django_heroku.settings(locals())
 
